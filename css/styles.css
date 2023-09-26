@@ -12,6 +12,7 @@
   border-radius: 0.5rem;
   color: white;
   padding: 5px;
+  overflow-wrap: break-word;
 }
 
 .floating-box {
@@ -77,6 +78,22 @@ footer h3,h4,div {
   text-transform: uppercase;
 }
 
+.leading-text {
+  text-indent: 0.125rem;
+  line-height: 1.25rem; 
+  padding-bottom: 0.25rem;
+  border-style: dashed;
+}
+
+.sub-text {
+  text-indent: 0.125rem;
+  line-height: 1.25rem; 
+  padding-left: 0.25rem;
+  border-style: dotted;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
 img {
   outline-color: black;
   border-radius: 1rem;
@@ -85,6 +102,28 @@ img {
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+
+.wip-image {
+  filter: brightness(1.1);
+}
+
+.grid-title {
+  margin-top: 4px;
+  padding-top: 0.5rem;
+  border-top: solid black 2px;
+}
+
+.grid {
+  border-top: solid black 2px;
+  display: grid;
+  grid-column: span 1 / span 1;
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  column-gap: 2px;
+  row-gap: 2px;
+  place-content: center;
+  place-items: start;
+  place-self: auto;
 }
 
 @keyframes shake {
