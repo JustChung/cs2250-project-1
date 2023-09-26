@@ -1,0 +1,53 @@
+.center {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    background-color: red;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav li {
+    display: inline-block;
+  }
+  nav li:hover {
+    background-color: rgba(255,255,0,0.5);
+    border-radius: 0.5rem;
+  }
+  nav a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 799px) {
+    header {
+        font-size: 2.5rem;
+    }
+    nav {
+        font-size: 2rem;
+    }
+    main, div, p, h2, h3, h4 {
+        font-size: 1.5rem; 
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    header {
+        font-size: 1.5rem;
+    }
+    nav {
+        font-size: 1rem;
+    }
+    main, div, p, h2, h3, h4 {
+        font-size: 1rem;
+    }
+  }
